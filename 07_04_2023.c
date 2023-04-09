@@ -10,14 +10,14 @@ typedef float (*pf)(float, float); // typedef dla wskaźnika na funkcję
 int main() {
     pf dzialania[4] = {dodaj, odejmij, mnoz, dziel}; // tablica wskaźników na funkcje
     
-    int wybor;
+    int x;
     float a, b;
     printf("Podaj wybor dzialania (0-dodaj, 1-odejmij, 2-mnoz, 3-dziel): ");
-    scanf("%d", &wybor);
+    scanf("%d", &x);
     printf("Podaj dwa argumenty: ");
     scanf("%f %f", &a, &b);
     
-    printf("Wynik dzialania to: %f\n", dzialania[wybor](a, b));
+    printf("Wynik dzialania to: %f\n", dzialania[x](a, b));
     
     return 0;
 }
