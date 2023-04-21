@@ -13,3 +13,5 @@ pf dzialania[4]{
 dodaj, odejmij, mnoz, dziel
 };
 printf("Wynik działania to: %f\n" dzialania[x](a, b));
+
+
